@@ -1,10 +1,10 @@
 "use client";
-
 import { useMyPresence, useOthers } from "@liveblocks/react/suspense";
 import React from "react";
 import FollowPointer from "./FollowPointer";
 
 function LiveCursorProvider({ children }: { children: React.ReactNode }) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [myPresence, updateMyPresence] = useMyPresence();
   const othersPresence = useOthers();
 
